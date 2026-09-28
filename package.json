@@ -1,0 +1,8 @@
+{
+  "name":"texas-health-access-navigator-os",
+  "version":"3.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{"start":"node server/server.mjs","test":"node tests/validate.mjs"},
+  "engines":{"node":">=20"}
+}

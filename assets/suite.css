@@ -1,0 +1,16 @@
+/* v3 collaboration + systems layer */
+.suite-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:.9rem}
+.suite-kpi{font-size:clamp(1.25rem,3vw,2rem);font-weight:850;line-height:1.1}
+.suite-toolbar{display:flex;flex-wrap:wrap;gap:.55rem;align-items:end}
+.suite-toolbar>.field{min-width:min(100%,190px);flex:1}
+.system-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:.75rem}
+.system-node{border:1px solid var(--line);border-radius:16px;padding:.85rem;background:var(--panel);min-height:150px}
+.system-node h3{margin:.1rem 0 .45rem}.system-node ul{padding-left:1.1rem;margin:.35rem 0}
+.discipline-tags{display:flex;flex-wrap:wrap;gap:.35rem}.discipline-tags label{border:1px solid var(--line);border-radius:999px;padding:.35rem .55rem;background:var(--panel2);cursor:pointer}
+.board{display:grid;grid-template-columns:repeat(4,minmax(220px,1fr));gap:.75rem;overflow:auto;padding-bottom:.5rem}.board-col{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:.7rem;min-height:180px}.board-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.65rem;margin:.5rem 0}
+.presence{display:flex;gap:.35rem;flex-wrap:wrap}.presence span{border:1px solid var(--line);border-radius:999px;padding:.25rem .5rem;font-size:.78rem}
+.sync-good{color:var(--good)}.sync-warn{color:var(--warn)}.sync-bad{color:var(--danger)}
+.ai-output{white-space:pre-wrap;min-height:120px;border:1px solid var(--line);border-radius:14px;padding:.8rem;background:var(--panel2)}
+.evidence-A{border-left:5px solid #2e7d32}.evidence-B{border-left:5px solid #558b2f}.evidence-C{border-left:5px solid #0277bd}.evidence-D{border-left:5px solid #6a1b9a}.evidence-E{border-left:5px solid #ef6c00}.evidence-F{border-left:5px solid #616161}
+@media(max-width:900px){.board{grid-template-columns:repeat(4,82vw)}}
+@media print{.suite-toolbar,.ai-controls,.multiplayer-controls{display:none!important}.board{display:block}.board-col{break-inside:avoid;margin-bottom:.7rem}}

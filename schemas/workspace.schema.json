@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://example.invalid/txh/workspace.schema.json",
+  "title":"Texas Health OS Shared Workspace Payload",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["workspace","tasks","comments","decisions","evidence"],
+  "properties":{
+    "workspace":{"type":["object","null"]},
+    "tasks":{"type":"array","maxItems":500},
+    "comments":{"type":"array","maxItems":1000},
+    "decisions":{"type":"array","maxItems":500},
+    "evidence":{"type":"array","maxItems":1000}
+  }
+}
